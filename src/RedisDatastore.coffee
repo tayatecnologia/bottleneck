@@ -86,7 +86,7 @@ class RedisDatastore
         else
           @runScript("init", @prepareInitSettings(false))
           .then => @runScript(name, args)
-      else if e.message == "UNKNOWN_CLIENT"
+      else if (e.message.match(/^(.*\s)?UNKNOWN_CLIENT$/) != null)
         @runScript("register_client", [@instance.queued()])
         .then => @runScript(name, args)
       else @Promise.reject e
