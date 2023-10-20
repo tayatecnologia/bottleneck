@@ -1,6 +1,6 @@
 {
-  "name": "@sergiiivzhenko/bottleneck",
-  "version": "2.19.7",
+  "name": "@maselious/bottleneck",
+  "version": "2.19.8",
   "description": "Distributed task scheduler and rate limiter",
   "main": "lib/index.js",
   "typings": "bottleneck.d.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SGrondin/bottleneck"
+    "url": "git+https://github.com/SGrondin/bottleneck.git"
   },
   "keywords": [
     "async rate limiter",
@@ -26,9 +26,7 @@
     "load",
     "clustering"
   ],
-  "author": {
-    "name": "Simon Grondin"
-  },
+  "author": "Simon Grondin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SGrondin/bottleneck/issues"
@@ -52,5 +50,9 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "typescript": "^2.6.2"
   },
-  "dependencies": {}
+  "homepage": "https://github.com/SGrondin/bottleneck#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
 }

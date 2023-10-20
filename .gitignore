@@ -1,2 +1,6 @@
 node_modules/
 test.js
+/.idea/.gitignore
+/.idea/bottleneck.iml
+/.idea/modules.xml
+/.idea/vcs.xml
