@@ -803,7 +803,7 @@
 
 	var Sync_1 = Sync;
 
-	var version = "2.19.6";
+	var version = "2.19.8";
 	var version$1 = {
 		version: version
 	};

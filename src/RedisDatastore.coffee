@@ -81,7 +81,7 @@ class RedisDatastore
         return resolve replies
       @connection.__scriptFn__(name) arr...
     .catch (e) =>
-      if e.message == "SETTINGS_KEY_NOT_FOUND"
+      if (e.message.match(/^(.*\s)?SETTINGS_KEY_NOT_FOUND$/) != null)
         if name == "heartbeat" then @Promise.resolve()
         else
           @runScript("init", @prepareInitSettings(false))

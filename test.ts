@@ -1,6 +1,6 @@
 /// <reference path="bottleneck.d.ts" />
 
-import Bottleneck from "@sergiiivzhenko/bottleneck";
+import Bottleneck from "@maselious/bottleneck";
 // import * as assert from "assert";
 function assert(b: boolean): void { }
 
