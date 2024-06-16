@@ -1,4 +1,4 @@
-declare module "@maselious/bottleneck" {
+declare module "@brunoallison/bottleneck" {
     namespace Bottleneck {
     type ConstructorOptions = {
         /**
